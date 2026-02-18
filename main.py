@@ -5,7 +5,7 @@ import joblib
 
 app = FastAPI()
 
-model = joblib.load('./digits_model.joblib')
+model = joblib.load('digits_model.joblib')
 
 class Features(BaseModel):
     features : list

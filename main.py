@@ -12,7 +12,7 @@ class Features(BaseModel):
     features : List[List[float]]
 
 
-@app.get('/')
+@app.get('/health_check')
 def welcome():
     return {'message': 'Welcome to Digits classification', 'status': 200}
 

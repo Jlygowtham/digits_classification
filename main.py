@@ -14,6 +14,7 @@ class Features(BaseModel):
 
 @app.get('/health_check')
 def welcome():
+    print('Welcome to Digits classification')
     return {'message': 'Welcome to Digits classification', 'status': 200}
 
 
